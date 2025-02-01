@@ -2,9 +2,9 @@ TodoApp\Contact.class
 TodoApp\MemoTab.class
 TodoApp\TodoApp.class
 TodoApp\CalendarTab.class
-TodoApp\Main.class
 TodoApp\TodoApp$Task.class
 TodoApp\ContactTab.class
+com\example\todoapp\Main.class
 TodoApp\TodoApp$Priority.class
 TodoApp\TodoTab.class
 TodoApp\Priority.class
