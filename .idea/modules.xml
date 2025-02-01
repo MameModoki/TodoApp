@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/TodoApp.iml" filepath="$PROJECT_DIR$/TodoApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../apache-maven-3.9.9/apache-maven-3.9.9.iml" filepath="$PROJECT_DIR$/../apache-maven-3.9.9/apache-maven-3.9.9.iml" />
     </modules>
   </component>
 </project>
