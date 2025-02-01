@@ -9,11 +9,9 @@ $folders = @(
 )
 
 # 必要なフォルダを作成
-foreach ($folder in $folders)
-{
+foreach ($folder in $folders) {
     $path = "$projectRoot\$folder"
-    if (-Not (Test-Path $path))
-    {
+    if (-Not (Test-Path $path)) {
         New-Item -Path $path -ItemType Directory
     }
 }
