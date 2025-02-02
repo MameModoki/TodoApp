@@ -1,4 +1,4 @@
-package TodoApp;
+package com.example.todoapp.views;
 
 import javafx.scene.control.*;
 import javafx.scene.layout.VBox;

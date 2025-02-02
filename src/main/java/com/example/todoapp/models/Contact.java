@@ -1,4 +1,4 @@
-package TodoApp;
+package com.example.todoapp.models;
 
 public class Contact {
 
