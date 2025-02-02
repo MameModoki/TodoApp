@@ -1,37 +1,19 @@
-package TodoApp;
+package com.example.todoapp;
 
 import java.io.*;
-import java.util.*;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Scanner;
 
 public class TodoApp {
 
+    private static final String FILE_NAME = "tasks.txt";
     private final List<Task> tasks = new ArrayList<>();
     private final Scanner scanner = new Scanner(System.in);
-    private static final String FILE_NAME = "tasks.txt";
-
-    private enum Priority {
-        高, 中, 低
-    }
-
-    private static class Task {
-        String description;
-        LocalDate deadline;
-        Priority priority;
-
-        Task(String description, LocalDate deadline, Priority priority) {
-            this.description = description;
-            this.deadline = deadline;
-            this.priority = priority;
-        }
-
-        @Override
-        public String toString() {
-            return "[優先度: " + priority + "] " + description + " (締切: " + deadline.format(DateTimeFormatter.ofPattern("yyyy-MM-dd")) + ")";
-        }
-    }
 
     public TodoApp() {
         loadTasks(); // ✅ 起動時にタスクを読み込む
@@ -217,5 +199,26 @@ public class TodoApp {
 
         saveTasks();
         System.out.println("✅ タスクを更新しました！");
+    }
+
+    private enum Priority {
+        高, 中, 低
+    }
+
+    private static class Task {
+        String description;
+        LocalDate deadline;
+        Priority priority;
+
+        Task(String description, LocalDate deadline, Priority priority) {
+            this.description = description;
+            this.deadline = deadline;
+            this.priority = priority;
+        }
+
+        @Override
+        public String toString() {
+            return "[優先度: " + priority + "] " + description + " (締切: " + deadline.format(DateTimeFormatter.ofPattern("yyyy-MM-dd")) + ")";
+        }
     }
 }
