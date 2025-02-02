@@ -3,6 +3,7 @@ package com.example.todoapp.views;
 import com.example.todoapp.models.Memo;
 import javafx.scene.control.*;
 import javafx.scene.layout.VBox;
+import com.example.todoapp.models.Memo;
 
 /**
  * メモを表示・管理するタブのUIコンポーネント

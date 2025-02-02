@@ -3,6 +3,7 @@ package com.example.todoapp.views;
 import com.example.todoapp.models.Contact;
 import javafx.scene.control.*;
 import javafx.scene.layout.VBox;
+import com.example.todoapp.models.Contact;
 
 /**
  * 連絡先を表示・管理するタブのUIコンポーネント
