@@ -1,5 +1,7 @@
-package com.example.todoapp.models;
+package com.example.todoapp.views;
 
+import com.example.todoapp.models.Task;
+import com.example.todoapp.models.Priority;
 import javafx.collections.FXCollections;
 import javafx.scene.control.*;
 import javafx.scene.layout.VBox;
@@ -59,7 +61,7 @@ public class TodoTab {
         });
 
         // コンテンツをまとめる
-        VBox vbox = new VBox(10, 
+        VBox vbox = new VBox(10,
             taskInput,
             priorityComboBox,
             deadlinePicker,
@@ -70,4 +72,4 @@ public class TodoTab {
         vbox.setSpacing(10);
         return vbox;
     }
-}
+} 
