@@ -1,10 +1,16 @@
 package com.example.todoapp.views;
 
-import javafx.scene.control.*;
-import javafx.scene.layout.VBox;
-import com.example.todoapp.models.Memo;
+import java.time.LocalDate;
 
-public class MemoTab {
+import com.example.todoapp.models.Memo;
+import com.example.todoapp.models.Memo.Priority;
+
+import javafx.scene.control.Button;
+import javafx.scene.control.ListView;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.VBox;
+
+public class MemoTab implements TabContent {
 
     private ListView<Memo> memoListView = new ListView<>();
 
@@ -13,7 +19,7 @@ public class MemoTab {
         TextField memoInput = new TextField();
         Button addMemoButton = new Button("追加");
         addMemoButton.setOnAction(e -> {
-            memoListView.getItems().add(new Memo(memoInput.getText()));
+            memoListView.getItems().add(new Memo(memoInput.getText(), Priority.中, LocalDate.now()));
             memoInput.clear();
         });
 

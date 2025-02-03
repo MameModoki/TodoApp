@@ -1,10 +1,13 @@
 package com.example.todoapp.views;
 
-import javafx.scene.control.*;
-import javafx.scene.layout.VBox;
 import com.example.todoapp.models.Contact;
 
-public class ContactTab {
+import javafx.scene.control.Button;
+import javafx.scene.control.ListView;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.VBox;
+
+public class ContactTab implements TabContent {
 
     private ListView<Contact> contactListView = new ListView<>();
 

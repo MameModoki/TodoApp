@@ -1,9 +1,10 @@
 package com.example.todoapp.views;
 
-import javafx.scene.control.*;
+import javafx.scene.control.Button;
+import javafx.scene.control.DatePicker;
 import javafx.scene.layout.VBox;
 
-public class CalendarTab {
+public class CalendarTab implements TabContent {
 
     public VBox getTabContent() {
         DatePicker calendarDatePicker = new DatePicker();
